@@ -1,0 +1,524 @@
+<html>
+    <head>
+        <title>starbucks</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .icon1{
+                position: absolute;
+                left:10px;
+            }
+            li{
+                display:inline;
+                font-family: SoDoSans_Light, Helvetica, sans-serif;
+                color:#212529;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400px;
+                
+            }
+            .home{
+                position: absolute;
+                left:100px;
+            }
+            a{
+                text-decoration: none;
+                padding:30px;
+            }
+            input{
+                position:absolute;
+                left:900px;
+                padding:10px;
+                width:300px;
+                border-radius:15px;
+                border:none;
+                box-shadow:1px 1px lightgrey;    
+            }
+            .search{
+             position:absolute;
+             left:1150px;
+             padding:10px;
+             border-radius: 15px;
+             border:none;
+             background-color:white;
+            }
+            .user{
+                position:absolute;
+             left:1300px;
+             padding:10px;
+             border-radius:20px;
+             border:1px solid black;
+             background-color:white;   
+            }
+            .world{
+               font-family: SoDoSans_Light, Helvetica, sans-serif;
+               font-size: 20px;
+               line-height:24px;
+                position:absolute;
+                top:60px;   
+                left:0px;
+                background-color: rgb(30,57,50);
+                color:white;
+                padding:30px;
+                width: 1500px;   
+            }
+            .btn{
+                position: absolute;
+                top:95px;
+                left:1200px;
+                border-radius:20px;
+                padding:12px;
+                background-color:rgb(30,57,50);;
+                color:white;
+                border-color: white;
+            }
+            h1{
+                position: absolute;
+                top:180px;
+                left:80px;
+                color:#1e3932;
+                font-family: SoDoSans_Bold, Helvetica, sans-serif;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            iframe{
+                position: absolute;
+                top:200px;
+            }
+            .aaa{
+                position: absolute;
+                top:150px;
+                left:-20px;
+                border-radius: 20px;
+                font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+                font-size:14px;
+                line-height: 21px;
+            }
+            img{
+                
+                border-radius:80px;
+            }
+           .para{
+            border:1px solid lightgrey;
+            height:300px;
+            width:1500px;
+            border-radius: 10px;;
+            position: absolute;
+            top:450px;
+            left:20px; 
+            background-color: rgb(0,117,74);
+           }
+           .cup{
+            position: absolute;
+            top:510px;
+            left:50px;
+           }
+           .c1{
+            position: absolute;
+            top:450px;
+            left:100px;
+           }
+           .c2{
+            position: absolute;
+            top:500px;
+            left:100px;
+           }
+           .c3{
+            position: absolute;
+            top:530px;
+            left:150px;
+           }
+           .c4{
+            position: absolute;
+            top:550px;
+            left:100px;
+           }
+           .btn1{
+            position: absolute;
+            top:680px;
+            left:1350px;
+            border-radius:20px;
+                padding:12px;
+                background-color:rgb(30,57,50);;
+                color:white;
+                border-color: white;
+           }
+            h2{
+                position: absolute;
+                top:810px;
+                left:100px;
+                font-family: SoDoSans_Bold, Helvetica, sans-serif;
+                color:#1e3932;
+                font-size: 24px;
+                line-height: 29px;
+                font-weight: 500px;
+                z-index: 10;
+            }
+            .b{
+                border:1px solid lightgray;
+                height:300px;
+                width:1500px;
+                background-color:rgb(237,235,233);
+                position:absolute;
+                top:790px;
+                width:1500px;
+                border-radius:15px;
+            }
+            .b1{
+                position: absolute;
+                border:1px solid grey;
+                background-color: white;
+                height:150px;
+                width:400px;
+                top:900px;
+                left:100px; 
+                z-index:22            
+            }
+            .b2{
+                position: absolute;
+                border:1px solid grey;
+                background-color: white;
+                height:150px;
+                width:400px;
+                top:900px;
+                left:580px;
+                z-index:20;
+            }
+            .b3{
+                position: absolute;
+                border:1px solid grey ;
+                background-color: white;
+                height:150px;
+                width:400px;
+                top:900px;
+                left:1060px;
+                z-index:21;
+            }
+            .p{
+                position: absolute;
+                top:920px;
+                left:110px;
+                z-index:23;
+            }
+            .ad{
+                position: absolute;
+                left:320px;
+                top:100px;
+                PADDING:7PX;
+                color:white;
+                background-color: green;
+            }
+            .p1{
+                position: absolute;
+                top:920px;
+                left:590px;
+                z-index:24;
+            }
+            .p2{
+                position: absolute;
+                top:920px;
+                left:1070px;
+                z-index:25;
+            }
+            .view{
+                position: absolute;
+                top:830px;
+                left:1320px;
+                border:none;
+                color:green;
+            }
+            .c{
+                border:1px solid lightgray;
+                height:550px;
+                width:1500px;
+                background-color:rgb(237,235,233);
+                position:absolute;
+                top:1130px;
+                width:1500px;
+                border-radius:15px;
+            }
+            .c1{
+                font-family: SoDoSans_Bold, Helvetica, sans-serif;
+                font-weight: 500px;
+                font-size: 24px;
+                line-height: 29px;
+                color:white;
+                position: absolute;
+                left:50px;
+
+            }
+            .c2{
+                font-family: SoDoSans_Bold, Helvetica, sans-serif;
+                position: absolute;
+                left:200px;
+                top:520px;
+                font-weight: 500px;
+                font-size: 24px;
+                line-height: 29px;
+                color:white;
+            }
+            .c3{
+                font-family: SoDoSans_Bold, Helvetica, sans-serif;
+                position: absolute;
+                left:200px;
+                top:560px;
+                font-weight: 500px;
+                font-size: 20px;
+                line-height: 29px;
+                color:white;
+            
+            }
+
+            .c4{
+                font-family: SoDoSans_Bold, Helvetica, sans-serif;
+                position: absolute;
+                left:200px;
+                top:610px;
+                font-weight: 500px;
+                font-size: 24px;
+                line-height: 29px;
+                color:white;
+            }
+            
+
+            
+            .big{
+                position: absolute;
+                top:1250px;
+                left:120px;
+            }
+            h3{
+                position: absolute;
+                top:1150px;
+                left:100px;
+                font-family: SoDoSans_Bold, Helvetica, sans-serif;
+                font-weight: 500px;
+                font-size: 24px;
+                line-height: 29px;
+                color:#1e3932;
+            }
+            .discover{
+                    position: absolute;
+                    top:1160px;
+                    left:1300px;
+                    border:none;
+                    color:#00754a;
+            }
+            h4{
+                position: absolute;
+                top:1250px;
+                left:190px;
+                font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+                color:WHITE;
+                font-size: 28px;
+                line-height: 34px;
+                font-weight: 500px;
+            }
+            .old{
+                position: absolute;
+                top:1320px;
+                left:190px;
+                color:white;
+                font-family: SoDoSans_Light, Helvetica, sans-serif;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            .learn{
+                position:absolute;
+                top:1550px;
+                left:180px;
+                border:1px solid white;
+                background-color: white;
+                border-radius: 18px;
+                padding:15px;
+                font-family: SoDoSans_Light, Helvetica, sans-serif;
+            }
+            .last{
+                border:1px solid lightgray;
+                height:550px;
+                width:1500px;
+                background-color:#1e3932;
+                position:absolute;
+                top:1750px;
+                border-radius:15px;
+            }
+            table{
+                position: absolute;
+                top:1750px;
+                left:350px;
+            }
+            th{
+                font-family:SoDoSans_Semibold, Helvetica, sans-serif;
+                font-size:18px;
+                line-height:22px;
+                font-weight: 500px;
+                color:white;
+            }
+            td{
+                font-family:SoDoSans_Semibold, Helvetica, sans-serif;
+                font-size:14px;
+                line-height:21px;
+                font-weight: 400px;
+                color:white;
+            }
+            .star{
+                position: absolute;
+                top:1800px;
+                left:150px;
+            }
+            .icon{
+                position:absolute;
+                top:1870px;
+                left:880px;
+                font-size:30px;
+                color: white;
+            }
+            fieldset{
+                border-color: white;
+                border-right:none;
+                border-left:none;
+                border-top:none;
+                position: absolute;
+                top:2200px;
+                left:120px;
+                width:1200px;
+            }
+           .rights{
+                position: absolute;
+                top:2230px;
+                left:1070px;
+                color:#a2a2a2;
+                font-family:SoDoSans_Semibold, Helvetica, sans-serif;
+                font-size:10px;
+                line-height: 14px;
+                font-weight: 400px;
+           }
+           .apple{
+            position: absolute;
+            top:1850px;
+            left:1100px;
+            background-color: white;
+           }   
+           body{
+            overflow-x: hidden;
+           }   
+            </style>
+    </head>
+    <body>
+        <div class="icon1">
+        <img src="https://www.starbucks.in/assets/icon/logo.png"height="50"width="50">
+        </div>
+        <nav class="home">
+            <ul>
+                <li><a href="C:\Users\Lenovo\OneDrive\Desktop\Chaitu Html\Starbucks.html">Home</a></li>
+                <li><a href="C:\Users\Lenovo\OneDrive\Desktop\Chaitu Html\cupons.html">Gift</a></li>
+                <li><a href="C:\Users\Lenovo\OneDrive\Desktop\Chaitu Html\Store.html">Order</a></li>
+                <li><a href="C:\Users\Lenovo\OneDrive\Desktop\Chaitu Html\pay.html">Pay</a></li>
+                <li><a href="C:\Users\Lenovo\OneDrive\Desktop\Chaitu Html\maps.html">Store</a></li>
+            </ul>
+            </nav> 
+        <input type="text"placeholder="Looking for something specific?">
+        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="user"><i class="fa-solid fa-user"></i></button>
+    
+        
+        <p class="world">A world of rewards awaits you!Sign up now.</p>
+
+        <button class="btn">Know More</button>
+        <h1>Handcrafted Curations</h1>
+            <table class="aaa" cellspacing="110">
+            <tr>
+           <figure> <td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Bestseller.jpg"height="120"width="120"><figcaption align="center">Bestseller</figcaption></figurer></td>
+            <figure><td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Drinks.jpg"height="120"width="120"><figcaption align="center">Drinks</figcaption></figurer></td>
+            <figure><td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Food.jpg"height="120"width="120"><figcaption align="center">Food</figcaption></figurer></td>
+            <figure><td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Merchandise.jpg"height="120"width="120"><figcaption align="center">Merchandise</figcaption></figurer></td>
+            <figure><td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/CoffeeAtHome.jpg"height="120"width="120"><figcaption align="center">Coffee At Home</figcaption></figurer></td>
+            <figure><td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/ReadyToEat.jpg"height="120"width="120"><br><figcaption align="center">Ready To Eat</figcaption></figurer></td>
+       </tr>
+       </table>
+       <div class="para"></div>
+       <div class="content">
+        <p class="c1">Sip On Your Favourites With</p>
+       <p class="c2">Starbucks Essentials</p>
+       <p class="c3">This Friendship day gift timeless and classic Starbucks.Now available on Myntra too.</p>
+       <p class="c4">Starting from<br>RS 800.00</p>
+       <div class="beer">
+       <img class="cup"src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Image_51_18d7946dc4.png"height="230"width="100">
+       </div>
+       <button class="btn1">Order Now</button>
+    </div>
+        <h2>Barista Recommends</h2>
+            <div class="b"></div>
+            <div class="b1">
+                <p align="center"><b>Chocolate Brownie <br> Cupcake<br><br><br>$-10</b>
+                </p>
+                <button class="ad">Add item</button>
+            </div>
+            <div class="b2">
+                <p align="center"><b>Strawberry Milkshake<br><br><br>$-15
+                </p>
+                <button class="ad">Add item</button>
+            </div>
+            <div class="b3">
+                <p align="center"><b>Vanilla Milkshake<br><br><br>$-15
+                </p>
+                <button class="ad">Add item</button>
+            </div>
+    <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/113008.webp"height="120"width="120"class="p">
+    <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/112570.webp"height="120"width="120"class="p1">
+    <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/112573.webp"height="120"width="120"class="p2">
+    <button class="view">View Menu</button>
+    <div class="c"></div>
+    <img class="big" src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Coffeculture_Blog_Web_Banner_2_X_8b72db6546.jpg"height="400"width="1300">
+    <h3>Learn more about the world of coffee!</h3>
+    <button class="discover">Discover More</button>
+    <h4>Coffee-OriginStory:Mystic,Intriguing And Aromatic</h4>
+    <P class="old">Many centuries ago,some where between 800-900 AD the story of coffee first took roots in Ethiopia</P>
+    <button class="learn">Learn More</button>
+    <div class="last"></div>
+    <table cellspacing=50px;>
+        <tr>
+            <th>About Us</th>
+            <th>Responsibility</th>
+            <th>Quick Lines</th>
+            <th> Social Media</th>
+        </tr>
+        <tr>
+            <td>Our Heritage</td>
+            <td>Community</td>
+            <td> Delivery</td>
+            </tr>
+        <tr>
+            <td>Our Company</td>
+            <td>Ethical Sourcing</td>
+            <td>Season's Gifting</td>
+        </tr>
+        <tr>
+            <td>Coffee House</td>
+            <td>Ervinorment</td>
+            <td>Careers</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Diversity</td>
+            <td>Customer Service</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>FAQs</td>
+        </tr>
+        <div class="star">
+        <img  src="https://www.starbucks.in/assets/icon/logo.png"height="70"width="70">
+        </div>
+        <div class="icon">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        </div>
+    </table>
+    <fieldset></fieldset>
+    <p class="rights">@2003 Starbucks Coffee Company.All rights reserved.</p>
+    <div class="apple">
+        <img src="C:\Users\Lenovo\OneDrive\Desktop\download__1_-removebg-preview.png"height="140"width="200"></div>
+    </body>
+</html>
